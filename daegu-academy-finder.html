@@ -98,7 +98,15 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 }
 .detail-btn:hover { background: #0a2054; }
 
-.academy-notice { background: #FFF3E0; border-radius: 12px; padding: 16px 20px; font-size: 13px; color: #6b4c00; line-height: 1.8; margin: 28px 40px; }
+.academy-notice { background: #FFF3E0; border-radius: 16px; padding: 28px 24px; text-align: center; margin: 28px 40px; }
+.academy-notice p { font-size: 13.5px; color: #6b4c00; line-height: 1.8; margin-bottom: 18px; }
+.academy-notice-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.academy-notice-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0D2B6B; color: #fff; font-size: 13.5px; font-weight: 700;
+  padding: 11px 20px; border-radius: 10px; text-decoration: none;
+}
+.academy-notice-btn:hover { background: #0a2054; }
 
 .faq-section { padding: 40px 40px 10px; max-width: 760px; margin: 0 auto; }
 .faq-section h2 { font-size: 19px; font-weight: 700; color: #1a1a1a; margin-bottom: 16px; text-align: center; }
@@ -377,7 +385,13 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
       </div>
     </div>
   </div>
-  <div class="academy-notice"><i class="ti ti-alert-circle"></i> 위 지점 정보(등록번호·주소)는 academy-website.co.kr 기준이며 변경될 수 있습니다. 정확한 정보는 "자세히 보기"에서 실제 지점 페이지를 확인해주세요.</div>
+  <div class="academy-notice">
+    <p>더 많은 지점이나 가까운 지점을 직접 찾아보고 싶으시다면 아래 공식 사이트에서 확인해보세요.</p>
+    <div class="academy-notice-btns">
+      <a href="https://academy-website.co.kr/" target="_blank" rel="noopener" class="academy-notice-btn"><i class="ti ti-external-link"></i> academy-website.co.kr에서 찾기</a>
+      <a href="https://wawa-coaching.co.kr/" target="_blank" rel="noopener" class="academy-notice-btn"><i class="ti ti-external-link"></i> wawa-coaching.co.kr에서 찾기</a>
+    </div>
+  </div>
 </div>
 
 <section class="faq-section" id="faq">
