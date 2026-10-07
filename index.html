@@ -989,14 +989,9 @@ document.addEventListener('click', function(e) {
       });
     });
 
-    try {
-      if (!sessionStorage.getItem('wmShown')) {
-        sessionStorage.setItem('wmShown', '1');
-        setTimeout(function() {
-          document.getElementById('wmBackdrop').classList.add('show');
-        }, 1200);
-      }
-    } catch (e) {}
+    setTimeout(function() {
+      document.getElementById('wmBackdrop').classList.add('show');
+    }, 1200);
   });
 })();
 </script>
