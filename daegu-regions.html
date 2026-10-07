@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대구 지역별 과외 안내 - 대구 전과목 일대일 과외</title>
+<meta name="description" content="대구광역시 군위군·남구·달서구·달성군·동구·북구·서구·수성구·중구 전 지역에서 일대일 맞춤 과외가 가능합니다. 학교·동네로 바로 찾아보세요." />
+<meta name="keywords" content="대구 과외, 대구 일대일 과외, 대구 수학과외, 대구 영어과외, 대구 국어과외, 대구 지역별 과외, 대구 방문과외, 대구 비대면과외" />
+<link rel="canonical" href="https://daegu-tutoring.co.kr/daegu-regions.html" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff; word-break: keep-all; }
+
+.navbar {
+  position: sticky; top: 0; z-index: 1000;
+  background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 32px;
+}
+.navbar-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: #0D2B6B; font-size: 16px; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+.navbar-brand img { width: 26px; height: 26px; }
+.navbar-links { display: flex; align-items: center; gap: 20px; overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; -ms-overflow-style: none; }
+.navbar-links::-webkit-scrollbar { display: none; }
+.navbar-links a.nav-link { color: #444; font-size: 14px; font-weight: 500; text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent; white-space: nowrap; flex-shrink: 0; }
+.navbar-links a.nav-link:hover, .navbar-links a.nav-link.active { color: #0D2B6B; border-bottom-color: #FFB400; }
+.navbar-cta { background: #0D2B6B; color: #fff; font-size: 13px; font-weight: 700; padding: 9px 16px; border-radius: 20px; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+.navbar-cta:hover { background: #0a2054; }
+@media (max-width: 600px) {
+  .navbar { padding: 10px 16px; gap: 8px; }
+  .navbar-brand span { display: none; }
+  .navbar-links { gap: 12px; }
+  .navbar-links a.nav-link { font-size: 13px; }
+  .navbar-cta { padding: 8px 12px; font-size: 12px; }
+}
+
+.page-header { background: #F5F7FB; padding: 48px 40px 28px; }
+.page-title { font-size: 30px; font-weight: 800; color: #1a1a1a; line-height: 1.35; }
+.page-accent { color: #0D2B6B; }
+.page-count { font-size: 17px; font-weight: 400; color: #999; margin-left: 6px; }
+.page-sub { margin-top: 12px; font-size: 14px; color: #666; line-height: 1.8; }
+
+.search-wrap { padding: 24px 40px 0; background: #F5F7FB; }
+.center-search {
+  width: 100%; max-width: 440px; padding: 12px 16px; border-radius: 10px;
+  border: 1.5px solid #cfd7e8; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;
+  outline: none; background: #fff;
+}
+.center-search:focus { border-color: #0D2B6B; }
+
+.chip-row { display: flex; gap: 8px; flex-wrap: wrap; padding: 20px 40px 32px; background: #F5F7FB; }
+.region-chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; border-radius: 18px;
+  background: #fff; border: 1.5px solid #E0E6F0; color: #444; font-size: 13px; font-weight: 500;
+  text-decoration: none; transition: all 0.2s;
+}
+.region-chip:hover { background: #0D2B6B; color: #fff; border-color: #0D2B6B; }
+.region-chip span { color: #999; font-size: 11px; }
+.region-chip:hover span { color: rgba(255,255,255,0.7); }
+
+.centers-main { padding: 40px 40px 20px; }
+.center-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.center-card { min-height: 200px; scroll-margin-top: 70px; }
+.card-front {
+  width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column;
+  background: #fff; border: 1px solid #E0E6F0; border-radius: 12px; padding: 18px 18px;
+  transition: box-shadow 0.2s;
+}
+.center-card:hover .card-front { box-shadow: 0 4px 16px rgba(13,43,107,0.10); }
+.card-top-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.center-brand {
+  display: inline-block; font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 14px;
+  background: #E8EFFE; color: #0D2B6B;
+}
+.center-name { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+.center-reg { font-size: 12.5px; color: #999; line-height: 1.5; margin-bottom: 10px; }
+.center-addr.filled { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+.dong-tag { font-size: 12px; background: #F0F4FF; color: #0D2B6B; padding: 4px 10px; border-radius: 10px; font-weight: 500; }
+.dong-tag.dong-more { background: #F5F5F5; color: #888; }
+
+.school-details { margin-top: 10px; }
+.school-details summary {
+  cursor: pointer; list-style: none; font-size: 13px; font-weight: 700; color: #0D2B6B;
+  padding: 8px 0; display: flex; align-items: center; gap: 6px;
+}
+.school-details summary::-webkit-details-marker { display: none; }
+.school-details summary::before { content: '▸'; font-size: 11px; }
+.school-details[open] summary::before { content: '▾'; }
+.school-type-group { margin-top: 10px; margin-bottom: 10px; }
+.school-type-label { font-size: 12px; font-weight: 700; color: #0D2B6B; margin-bottom: 6px; }
+.school-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.school-item { font-size: 12px; padding: 5px 9px; border-radius: 7px; background: #F8F6F0; border: 1px solid #E5E1D8; color: #333; }
+
+.detail-btn {
+  margin-top: 14px; width: 100%; box-sizing: border-box;
+  background: #0D2B6B; color: #fff; font-size: 14px; font-weight: 700;
+  padding: 12px 16px; border-radius: 10px; text-decoration: none;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  font-family: 'Noto Sans KR', sans-serif; transition: background 0.2s;
+}
+.detail-btn:hover { background: #0a2054; }
+.detail-btn i { font-size: 13px; }
+
+.no-result { display: none; text-align: center; padding: 60px 20px; color: #999; font-size: 14px; }
+
+.cta-section { background: #FFF3E0; padding: 48px 40px; text-align: center; }
+.cta-section h2 { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 10px; }
+.cta-section p { font-size: 14px; color: rgba(0,0,0,0.6); margin-bottom: 24px; line-height: 1.8; }
+.btn-primary {
+  background: #FFB400; color: #0D2B6B; border: none;
+  padding: 14px 30px; border-radius: 8px; font-size: 15px; font-weight: 700;
+  cursor: pointer; font-family: 'Noto Sans KR', sans-serif;
+  text-decoration: none; display: inline-block;
+}
+
+.footer { background: #0D1C3B; color: rgba(255,255,255,0.6); padding: 40px; font-size: 13px; line-height: 1.9; }
+.footer strong { color: rgba(255,255,255,0.9); font-size: 16px; display: block; margin-bottom: 10px; }
+
+.floating-btn {
+  position: fixed; bottom: 28px; right: 24px;
+  background: #FFB400; color: #0D2B6B; font-weight: 700; font-size: 14px;
+  padding: 14px 22px; border-radius: 30px; border: none; cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif; box-shadow: 0 4px 16px rgba(255,180,0,0.4);
+  display: flex; align-items: center; gap: 8px; z-index: 999;
+  text-decoration: none; transition: transform 0.2s;
+}
+.floating-btn:hover { transform: translateY(-2px); }
+
+.top-btn {
+  position: fixed; bottom: 28px; left: 24px;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: #0D2B6B; color: #fff; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+  box-shadow: 0 4px 16px rgba(13,43,107,0.35); z-index: 999;
+  opacity: 0; pointer-events: none; transform: translateY(10px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.top-btn.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+@media (max-width: 600px) {
+  .page-header { padding: 36px 20px 22px; }
+  .page-title { font-size: 22px; }
+  .page-count { font-size: 14px; }
+  .search-wrap, .chip-row, .centers-main, .cta-section { padding-left: 20px; padding-right: 20px; }
+  .footer { padding: 32px 20px; }
+  .center-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><img src="favicon.svg" alt="대구 전과목 일대일 과외"><span>대구 전과목 일대일 과외</span></a>
+  <div class="navbar-links">
+    <a href="index.html" class="nav-link">홈</a>
+    <a href="index.html#about" class="nav-link">수업 방식</a>
+    <a href="daegu-regions.html" class="nav-link active">지역별 과외 안내</a>
+    <a href="news.html" class="nav-link">입시뉴스</a>
+    <a href="teachers.html" class="nav-link">선생님</a>
+    <a href="reviews.html" class="nav-link">후기</a>
+  </div>
+  <a href="index.html#consult" class="navbar-cta">상담신청</a>
+</nav>
+
+<div class="page-header">
+  <h1 class="page-title">대구 <span class="page-accent">지역별</span> 과외 안내<span class="page-count">(9개 구·군)</span></h1>
+  <p class="page-sub">대구광역시 전 지역(9개 구·군) 어디서나 일대일 맞춤 과외 매칭이 가능합니다. 우리 동네·학교를 검색해보세요.</p>
+</div>
+
+<div class="search-wrap">
+  <input type="text" id="centerSearch" class="center-search" placeholder="구·동·학교명으로 검색 (예: 수성구, 대명동, 경북고)" oninput="filterCenters(this.value)">
+</div>
+
+<div class="chip-row">
+    <a href="#card-군위군" class="region-chip">군위군</a>
+    <a href="#card-남구" class="region-chip">남구</a>
+    <a href="#card-달서구" class="region-chip">달서구</a>
+    <a href="#card-달성군" class="region-chip">달성군</a>
+    <a href="#card-동구" class="region-chip">동구</a>
+    <a href="#card-북구" class="region-chip">북구</a>
+    <a href="#card-서구" class="region-chip">서구</a>
+    <a href="#card-수성구" class="region-chip">수성구</a>
+    <a href="#card-중구" class="region-chip">중구</a>
+</div>
+
+<div class="centers-main">
+  <div class="center-grid" id="centerGrid">
+
+    <div id="card-군위군" class="center-card" data-name="군위군" data-search="군위군 대구 군위군 군위읍 우보면 소보면 부계면 효령면 삼국유사면 의흥면 군위고등학교 군위중학교 군위중학교우보캠퍼스 대구군위초등학교 대구군위초등학교송원캠퍼스 대구부계초등학교 대구부계초등학교고매캠퍼스 대구부계초등학교석산캠퍼스 대구부계초등학교의흥캠퍼스 대구부계초등학교효령캠퍼스 대구우보초등학교 부계중학교 부계중학교효령캠퍼스 의흥중학교 효령고등학교 대구 군위군 과외 대구 군위군 수학과외 대구 군위군 영어과외 대구 군위군 국어과외 대구 군위군 과학과외 대구 군위군 사회과외 대구 군위군 일대일과외 대구 군위군 비대면과외 대구 군위군 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 군위군</div>
+        </div>
+        <div class="center-name">대구광역시 군위군</div>
+        <div class="center-reg">관할 학교 15개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">군위읍</span><span class="dong-tag">우보면</span><span class="dong-tag">소보면</span><span class="dong-tag">부계면</span><span class="dong-tag">효령면</span><span class="dong-tag">삼국유사면</span><span class="dong-tag">의흥면</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (8)</div><div class="school-list"><span class="school-item">대구군위초등학교</span><span class="school-item">대구군위초등학교송원캠퍼스</span><span class="school-item">대구부계초등학교</span><span class="school-item">대구부계초등학교고매캠퍼스</span><span class="school-item">대구부계초등학교석산캠퍼스</span><span class="school-item">대구부계초등학교의흥캠퍼스</span><span class="school-item">대구부계초등학교효령캠퍼스</span><span class="school-item">대구우보초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (5)</div><div class="school-list"><span class="school-item">군위중학교</span><span class="school-item">군위중학교우보캠퍼스</span><span class="school-item">부계중학교</span><span class="school-item">부계중학교효령캠퍼스</span><span class="school-item">의흥중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (2)</div><div class="school-list"><span class="school-item">군위고등학교</span><span class="school-item">효령고등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-남구" class="center-card" data-name="남구" data-search="남구 대구 남구 대명동 봉덕동 이천동 경북여자상업고등학교 경북예술고등학교 경상공업고등학교 경상중학교 경상중학교부설방송통신중학교 경일여자고등학교 경일여자중학교 경혜여자중학교 남대구초등학교 대구고등학교 대구고등학교부설방송통신고등학교 대구광명학교 대구남덕초등학교 대구남도초등학교 대구남명초등학교 대구대덕초등학교 대구대명초등학교 대구대봉초등학교 대구덕희학교 대구보건학교 대구보명학교 대구봉덕초등학교 대구성명초등학교 대구영선초등학교 대구영화학교 대구중학교 대구효명초등학교 대명고등학교 대명중학교 한국대구화교중고등학교 협성경복중학교 협성고등학교 대구 남구 과외 대구 남구 수학과외 대구 남구 영어과외 대구 남구 국어과외 대구 남구 과학과외 대구 남구 사회과외 대구 남구 일대일과외 대구 남구 비대면과외 대구 남구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 남구</div>
+        </div>
+        <div class="center-name">대구광역시 남구</div>
+        <div class="center-reg">관할 학교 32개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">대명동</span><span class="dong-tag">봉덕동</span><span class="dong-tag">이천동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (11)</div><div class="school-list"><span class="school-item">남대구초등학교</span><span class="school-item">대구남덕초등학교</span><span class="school-item">대구남도초등학교</span><span class="school-item">대구남명초등학교</span><span class="school-item">대구대덕초등학교</span><span class="school-item">대구대명초등학교</span><span class="school-item">대구대봉초등학교</span><span class="school-item">대구봉덕초등학교</span><span class="school-item">대구성명초등학교</span><span class="school-item">대구영선초등학교</span><span class="school-item">대구효명초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (6)</div><div class="school-list"><span class="school-item">경상중학교</span><span class="school-item">경일여자중학교</span><span class="school-item">경혜여자중학교</span><span class="school-item">대구중학교</span><span class="school-item">대명중학교</span><span class="school-item">협성경복중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (7)</div><div class="school-list"><span class="school-item">경북여자상업고등학교</span><span class="school-item">경북예술고등학교</span><span class="school-item">경상공업고등학교</span><span class="school-item">경일여자고등학교</span><span class="school-item">대구고등학교</span><span class="school-item">대명고등학교</span><span class="school-item">협성고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (8)</div><div class="school-list"><span class="school-item">경상중학교부설방송통신중학교</span><span class="school-item">대구고등학교부설방송통신고등학교</span><span class="school-item">대구광명학교</span><span class="school-item">대구덕희학교</span><span class="school-item">대구보건학교</span><span class="school-item">대구보명학교</span><span class="school-item">대구영화학교</span><span class="school-item">한국대구화교중고등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-달서구" class="center-card" data-name="달서구" data-search="달서구 대구 달서구 상인동 성당동 용산동 두류동 월성동 도원동 감삼동 본동 송현동 대곡동 장기동 이곡동 본리동 신당동 유천동 진천동 죽전동 대천동 호산동 경북기계공업고등학교 경북기계공업고등학교부설대구문화예술산업학교 경암중학교 경원고등학교 경화여자고등학교 구남중학교 대건고등학교 대건중학교 대곡고등학교 대곡중학교 대구감삼초등학교 대구감천초등학교 대구교육대학교대구부설초등학교 대구남부초등학교 대구남송초등학교 대구내당초등학교 대구노전초등학교 대구대곡초등학교 대구대남초등학교 대구대서초등학교 대구대진초등학교 대구덕인초등학교 대구도원초등학교 대구반도체마이스터고등학교 대구보건고등학교 대구본리초등학교 대구상원고등학교 대구상원초등학교 대구상인초등학교 대구선원초등학교 대구성곡초등학교 대구성남초등학교 대구성당초등학교 대구성산초등학교 대구성서초등학교 대구성지초등학교 대구세명학교 대구송일초등학교 대구송현초등학교 대구신당초등학교 대구신서초등학교 대구신월초등학교 대구신흥초등학교 대구예담학교 대구와룡초등학교 대구외국어고등학교 대구용산초등학교 대구용전초등학교 대구용천초등학교 대구월배초등학교 대구월서초등학교 대구월성초등학교 대구월암초등학교 대구월촌초등학교 대구유천초등학교 대구이곡초등학교 대구장기초등학교 대구장동초등학교 대구장산초등학교 대구장성초등학교 대구제일여자상업고등학교 대구조암초등학교 대구죽전초등학교 대구진월초등학교 대구진천초등학교 대구하이텍고등학교 대구학산초등학교 대구한샘초등학교 대구한솔초등학교 대구한실초등학교 대구해올고등학교 대구호산초등학교 대서중학교 대진고등학교 대진중학교 도원고등학교 도원중학교 상서고등학교 상서중학교 상원중학교 상인고등학교 상인중학교 새본리중학교 성곡중학교 성당중학교 성산고등학교 성산중학교 성서고등학교 성서중학교 성지중학교 송현여자고등학교 송현여자중학교 영남고등학교 영남중학교 와룡고등학교 와룡중학교 용산중학교 원화여자고등학교 원화중학교 월배중학교 월서중학교 월암중학교 이곡중학교 조암중학교 학산중학교 호산고등학교 효성여자고등학교 효성중학교 효성초등학교 대구 달서구 과외 대구 달서구 수학과외 대구 달서구 영어과외 대구 달서구 국어과외 대구 달서구 과학과외 대구 달서구 사회과외 대구 달서구 일대일과외 대구 달서구 비대면과외 대구 달서구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 달서구</div>
+        </div>
+        <div class="center-name">대구광역시 달서구</div>
+        <div class="center-reg">관할 학교 109개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">상인동</span><span class="dong-tag">성당동</span><span class="dong-tag">용산동</span><span class="dong-tag">두류동</span><span class="dong-tag">월성동</span><span class="dong-tag">도원동</span><span class="dong-tag">감삼동</span><span class="dong-tag">본동</span><span class="dong-tag">송현동</span><span class="dong-tag">대곡동</span><span class="dong-tag">장기동</span><span class="dong-tag">이곡동</span> <span class="dong-tag dong-more">외 7개 동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (54)</div><div class="school-list"><span class="school-item">대구감삼초등학교</span><span class="school-item">대구감천초등학교</span><span class="school-item">대구교육대학교대구부설초등학교</span><span class="school-item">대구남부초등학교</span><span class="school-item">대구남송초등학교</span><span class="school-item">대구내당초등학교</span><span class="school-item">대구노전초등학교</span><span class="school-item">대구대곡초등학교</span><span class="school-item">대구대남초등학교</span><span class="school-item">대구대서초등학교</span><span class="school-item">대구대진초등학교</span><span class="school-item">대구덕인초등학교</span><span class="school-item">대구도원초등학교</span><span class="school-item">대구본리초등학교</span><span class="school-item">대구상원초등학교</span><span class="school-item">대구상인초등학교</span><span class="school-item">대구선원초등학교</span><span class="school-item">대구성곡초등학교</span><span class="school-item">대구성남초등학교</span><span class="school-item">대구성당초등학교</span><span class="school-item">대구성산초등학교</span><span class="school-item">대구성서초등학교</span><span class="school-item">대구성지초등학교</span><span class="school-item">대구송일초등학교</span><span class="school-item">대구송현초등학교</span><span class="school-item">대구신당초등학교</span><span class="school-item">대구신서초등학교</span><span class="school-item">대구신월초등학교</span><span class="school-item">대구신흥초등학교</span><span class="school-item">대구와룡초등학교</span><span class="school-item">대구용산초등학교</span><span class="school-item">대구용전초등학교</span><span class="school-item">대구용천초등학교</span><span class="school-item">대구월배초등학교</span><span class="school-item">대구월서초등학교</span><span class="school-item">대구월성초등학교</span><span class="school-item">대구월암초등학교</span><span class="school-item">대구월촌초등학교</span><span class="school-item">대구유천초등학교</span><span class="school-item">대구이곡초등학교</span><span class="school-item">대구장기초등학교</span><span class="school-item">대구장동초등학교</span><span class="school-item">대구장산초등학교</span><span class="school-item">대구장성초등학교</span><span class="school-item">대구조암초등학교</span><span class="school-item">대구죽전초등학교</span><span class="school-item">대구진월초등학교</span><span class="school-item">대구진천초등학교</span><span class="school-item">대구학산초등학교</span><span class="school-item">대구한샘초등학교</span><span class="school-item">대구한솔초등학교</span><span class="school-item">대구한실초등학교</span><span class="school-item">대구호산초등학교</span><span class="school-item">효성초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (28)</div><div class="school-list"><span class="school-item">경암중학교</span><span class="school-item">구남중학교</span><span class="school-item">대건중학교</span><span class="school-item">대곡중학교</span><span class="school-item">대서중학교</span><span class="school-item">대진중학교</span><span class="school-item">도원중학교</span><span class="school-item">상서중학교</span><span class="school-item">상원중학교</span><span class="school-item">상인중학교</span><span class="school-item">새본리중학교</span><span class="school-item">성곡중학교</span><span class="school-item">성당중학교</span><span class="school-item">성산중학교</span><span class="school-item">성서중학교</span><span class="school-item">성지중학교</span><span class="school-item">송현여자중학교</span><span class="school-item">영남중학교</span><span class="school-item">와룡중학교</span><span class="school-item">용산중학교</span><span class="school-item">원화중학교</span><span class="school-item">월배중학교</span><span class="school-item">월서중학교</span><span class="school-item">월암중학교</span><span class="school-item">이곡중학교</span><span class="school-item">조암중학교</span><span class="school-item">학산중학교</span><span class="school-item">효성중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (23)</div><div class="school-list"><span class="school-item">경북기계공업고등학교</span><span class="school-item">경원고등학교</span><span class="school-item">경화여자고등학교</span><span class="school-item">대건고등학교</span><span class="school-item">대곡고등학교</span><span class="school-item">대구반도체마이스터고등학교</span><span class="school-item">대구보건고등학교</span><span class="school-item">대구상원고등학교</span><span class="school-item">대구외국어고등학교</span><span class="school-item">대구제일여자상업고등학교</span><span class="school-item">대구하이텍고등학교</span><span class="school-item">대진고등학교</span><span class="school-item">도원고등학교</span><span class="school-item">상서고등학교</span><span class="school-item">상인고등학교</span><span class="school-item">성산고등학교</span><span class="school-item">성서고등학교</span><span class="school-item">송현여자고등학교</span><span class="school-item">영남고등학교</span><span class="school-item">와룡고등학교</span><span class="school-item">원화여자고등학교</span><span class="school-item">호산고등학교</span><span class="school-item">효성여자고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (4)</div><div class="school-list"><span class="school-item">경북기계공업고등학교부설대구문화예술산업학교</span><span class="school-item">대구세명학교</span><span class="school-item">대구예담학교</span><span class="school-item">대구해올고등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-달성군" class="center-card" data-name="달성군" data-search="달성군 대구 달성군 가창면 옥포읍 구지면 논공읍 다사읍 하빈면 화원읍 유가읍 현풍읍 가창중학교 경서중학교 구지중학교 논공중학교 다사고등학교 다사중학교 달서고등학교 달서중학교 달성중학교 대구가창초등학교 대구강림초등학교 대구공업고등학교 테크노폴리스 캠퍼스 대구구지초등학교 대구금계초등학교 대구금포초등학교 대구남동초등학교 대구논공초등학교 대구다사초등학교 대구대실초등학교 대구도림초등학교 대구동곡초등학교 대구매곡초등학교 대구명곡초등학교 대구반송초등학교 대구북동초등학교 대구비슬초등학교 대구서동초등학교 대구서재초등학교 대구세천초등학교 대구세현초등학교 대구소프트웨어마이스터고등학교 대구예아람학교 대구옥포초등학교 대구왕선초등학교 대구용계초등학교 대구유가초등학교 대구죽곡초등학교 대구천내초등학교 대구테크노초등학교 대구포산초등학교 대구하빈초등학교 대구현풍초등학교 대구화남초등학교 대구화동초등학교 대구화원초등학교 대원고등학교 북동중학교 비슬고등학교 서동중학교 서재중학교 심인고등학교 심인중학교 왕선중학교 유가중학교 천내중학교 포산고등학교 포산중학교 학력인정한남중미용정보고등학교 학력인정한남중학교 한남중미용정보고등학교 한울안중학교 현풍고등학교 현풍중학교 화원고등학교 화원중학교 대구 달성군 과외 대구 달성군 수학과외 대구 달성군 영어과외 대구 달성군 국어과외 대구 달성군 과학과외 대구 달성군 사회과외 대구 달성군 일대일과외 대구 달성군 비대면과외 대구 달성군 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 달성군</div>
+        </div>
+        <div class="center-name">대구광역시 달성군</div>
+        <div class="center-reg">관할 학교 65개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">가창면</span><span class="dong-tag">옥포읍</span><span class="dong-tag">구지면</span><span class="dong-tag">논공읍</span><span class="dong-tag">다사읍</span><span class="dong-tag">하빈면</span><span class="dong-tag">화원읍</span><span class="dong-tag">유가읍</span><span class="dong-tag">현풍읍</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (33)</div><div class="school-list"><span class="school-item">대구가창초등학교</span><span class="school-item">대구강림초등학교</span><span class="school-item">대구구지초등학교</span><span class="school-item">대구금계초등학교</span><span class="school-item">대구금포초등학교</span><span class="school-item">대구남동초등학교</span><span class="school-item">대구논공초등학교</span><span class="school-item">대구다사초등학교</span><span class="school-item">대구대실초등학교</span><span class="school-item">대구도림초등학교</span><span class="school-item">대구동곡초등학교</span><span class="school-item">대구매곡초등학교</span><span class="school-item">대구명곡초등학교</span><span class="school-item">대구반송초등학교</span><span class="school-item">대구북동초등학교</span><span class="school-item">대구비슬초등학교</span><span class="school-item">대구서동초등학교</span><span class="school-item">대구서재초등학교</span><span class="school-item">대구세천초등학교</span><span class="school-item">대구세현초등학교</span><span class="school-item">대구옥포초등학교</span><span class="school-item">대구왕선초등학교</span><span class="school-item">대구용계초등학교</span><span class="school-item">대구유가초등학교</span><span class="school-item">대구죽곡초등학교</span><span class="school-item">대구천내초등학교</span><span class="school-item">대구테크노초등학교</span><span class="school-item">대구포산초등학교</span><span class="school-item">대구하빈초등학교</span><span class="school-item">대구현풍초등학교</span><span class="school-item">대구화남초등학교</span><span class="school-item">대구화동초등학교</span><span class="school-item">대구화원초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (18)</div><div class="school-list"><span class="school-item">가창중학교</span><span class="school-item">경서중학교</span><span class="school-item">구지중학교</span><span class="school-item">논공중학교</span><span class="school-item">다사중학교</span><span class="school-item">달서중학교</span><span class="school-item">달성중학교</span><span class="school-item">북동중학교</span><span class="school-item">서동중학교</span><span class="school-item">서재중학교</span><span class="school-item">심인중학교</span><span class="school-item">왕선중학교</span><span class="school-item">유가중학교</span><span class="school-item">천내중학교</span><span class="school-item">포산중학교</span><span class="school-item">한울안중학교</span><span class="school-item">현풍중학교</span><span class="school-item">화원중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (10)</div><div class="school-list"><span class="school-item">다사고등학교</span><span class="school-item">달서고등학교</span><span class="school-item">대구공업고등학교 테크노폴리스 캠퍼스</span><span class="school-item">대구소프트웨어마이스터고등학교</span><span class="school-item">대원고등학교</span><span class="school-item">비슬고등학교</span><span class="school-item">심인고등학교</span><span class="school-item">포산고등학교</span><span class="school-item">현풍고등학교</span><span class="school-item">화원고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (4)</div><div class="school-list"><span class="school-item">대구예아람학교</span><span class="school-item">학력인정한남중미용정보고등학교</span><span class="school-item">학력인정한남중학교</span><span class="school-item">한남중미용정보고등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-동구" class="center-card" data-name="동구" data-search="동구 대구 동구 신서동 백안동 덕곡동 대구강동 신암동 각산동 대구동 방촌동 동호동 서호동 봉무동 불로동 괴전동 숙천동 신천동 율하동 효목동 입석동 지묘동 부동 신기동 정동 신평동 강동고등학교 강동중학교 공산중학교 달구벌고등학교 대구강동초등학교 대구공산초등학교 대구공업고등학교 대구관광고등학교 대구덕성초등학교 대구동부고등학교 대구동부초등학교 대구동신초등학교 대구동촌초등학교 대구동호초등학교 대구반야월초등학교 대구방촌초등학교 대구봉무초등학교 대구불로초등학교 대구새론초등학교 대구선명학교 대구송정초등학교 대구숙천초등학교 대구신성초등학교 대구신천초등학교 대구아양초등학교 대구안일초등학교 대구용호초등학교 대구율금초등학교 대구율원초등학교 대구율하초등학교 대구일과학고등학교 대구일마이스터고등학교 대구입석초등학교 대구지묘초등학교 대구팔공중학교 대구팔공초등학교 대구해서초등학교 대구해안초등학교 대구효동초등학교 대구효목초등학교 대구효신초등학교 동대구초등학교 동촌중학교 불로중학교 새론중학교 신기중학교 신아중학교 안심중학교 영신고등학교 영신중학교 영신초등학교 율원중학교 입석중학교 정동고등학교 조일고등학교 청구고등학교 청구중학교 대구 동구 과외 대구 동구 수학과외 대구 동구 영어과외 대구 동구 국어과외 대구 동구 과학과외 대구 동구 사회과외 대구 동구 일대일과외 대구 동구 비대면과외 대구 동구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 동구</div>
+        </div>
+        <div class="center-name">대구광역시 동구</div>
+        <div class="center-reg">관할 학교 57개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">신서동</span><span class="dong-tag">백안동</span><span class="dong-tag">덕곡동</span><span class="dong-tag">대구강동</span><span class="dong-tag">신암동</span><span class="dong-tag">각산동</span><span class="dong-tag">대구동</span><span class="dong-tag">방촌동</span><span class="dong-tag">동호동</span><span class="dong-tag">서호동</span><span class="dong-tag">봉무동</span><span class="dong-tag">불로동</span> <span class="dong-tag dong-more">외 11개 동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (32)</div><div class="school-list"><span class="school-item">대구강동초등학교</span><span class="school-item">대구공산초등학교</span><span class="school-item">대구덕성초등학교</span><span class="school-item">대구동부초등학교</span><span class="school-item">대구동신초등학교</span><span class="school-item">대구동촌초등학교</span><span class="school-item">대구동호초등학교</span><span class="school-item">대구반야월초등학교</span><span class="school-item">대구방촌초등학교</span><span class="school-item">대구봉무초등학교</span><span class="school-item">대구불로초등학교</span><span class="school-item">대구새론초등학교</span><span class="school-item">대구송정초등학교</span><span class="school-item">대구숙천초등학교</span><span class="school-item">대구신성초등학교</span><span class="school-item">대구신천초등학교</span><span class="school-item">대구아양초등학교</span><span class="school-item">대구안일초등학교</span><span class="school-item">대구용호초등학교</span><span class="school-item">대구율금초등학교</span><span class="school-item">대구율원초등학교</span><span class="school-item">대구율하초등학교</span><span class="school-item">대구입석초등학교</span><span class="school-item">대구지묘초등학교</span><span class="school-item">대구팔공초등학교</span><span class="school-item">대구해서초등학교</span><span class="school-item">대구해안초등학교</span><span class="school-item">대구효동초등학교</span><span class="school-item">대구효목초등학교</span><span class="school-item">대구효신초등학교</span><span class="school-item">동대구초등학교</span><span class="school-item">영신초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (13)</div><div class="school-list"><span class="school-item">강동중학교</span><span class="school-item">공산중학교</span><span class="school-item">대구팔공중학교</span><span class="school-item">동촌중학교</span><span class="school-item">불로중학교</span><span class="school-item">새론중학교</span><span class="school-item">신기중학교</span><span class="school-item">신아중학교</span><span class="school-item">안심중학교</span><span class="school-item">영신중학교</span><span class="school-item">율원중학교</span><span class="school-item">입석중학교</span><span class="school-item">청구중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (11)</div><div class="school-list"><span class="school-item">강동고등학교</span><span class="school-item">달구벌고등학교</span><span class="school-item">대구공업고등학교</span><span class="school-item">대구관광고등학교</span><span class="school-item">대구동부고등학교</span><span class="school-item">대구일과학고등학교</span><span class="school-item">대구일마이스터고등학교</span><span class="school-item">영신고등학교</span><span class="school-item">정동고등학교</span><span class="school-item">조일고등학교</span><span class="school-item">청구고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (1)</div><div class="school-list"><span class="school-item">대구선명학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-북구" class="center-card" data-name="북구" data-search="북구 대구 북구 태전동 구암동 칠성동 복현동 침산동 관음동 매천동 읍내동 국우동 산격동 대구동 동천동 사수동 서변동 대현동 연경동 동호동 팔달동 학정동 동변동 강북고등학교 강북중학교 경명여자고등학교 경명여자중학교 경상고등학교 경상여자고등학교 관음중학교 관천중학교 구암고등학교 구암중학교 대구강북초등학교 대구경진초등학교 대구관남초등학교 대구관문초등학교 대구관음초등학교 대구관천초등학교 대구교동초등학교 대구구암초등학교 대구국우초등학교 대구국제고등학교 대구달산초등학교 대구대산초등학교 대구대천초등학교 대구도남초등학교 대구동변초등학교 대구동평초등학교 대구매천초등학교 대구문성초등학교 대구복현초등학교 대구북부초등학교 대구북중학교 대구사수초등학교 대구산격초등학교 대구삼영초등학교 대구서변초등학교 대구성보학교 대구성북초등학교 대구스마트고등학교 대구신암초등학교 대구연경초등학교 대구옥산초등학교 대구운암초등학교 대구이룸고등학교 대구일중학교 대구체육고등학교 대구체육중학교 대구칠곡초등학교 대구칠성초등학교 대구침산초등학교 대구태암초등학교 대구태전초등학교 대구태현초등학교 대구팔달초등학교 대구학남초등학교 대구학정초등학교 대구함지초등학교 동변중학교 동평중학교 매천고등학교 매천중학교 복현중학교 북대구초등학교 사수중학교 산격중학교 서변중학교 성광고등학교 성광중학교 성화여자고등학교 성화중학교 영송여자고등학교 영진고등학교 운암고등학교 운암중학교 칠곡중학교 칠성고등학교 침산중학교 팔달중학교 학남고등학교 학남중학교 함지고등학교 대구 북구 과외 대구 북구 수학과외 대구 북구 영어과외 대구 북구 국어과외 대구 북구 과학과외 대구 북구 사회과외 대구 북구 일대일과외 대구 북구 비대면과외 대구 북구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 북구</div>
+        </div>
+        <div class="center-name">대구광역시 북구</div>
+        <div class="center-reg">관할 학교 80개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">태전동</span><span class="dong-tag">구암동</span><span class="dong-tag">칠성동</span><span class="dong-tag">복현동</span><span class="dong-tag">침산동</span><span class="dong-tag">관음동</span><span class="dong-tag">매천동</span><span class="dong-tag">읍내동</span><span class="dong-tag">국우동</span><span class="dong-tag">산격동</span><span class="dong-tag">대구동</span><span class="dong-tag">동천동</span> <span class="dong-tag dong-more">외 8개 동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (39)</div><div class="school-list"><span class="school-item">대구강북초등학교</span><span class="school-item">대구경진초등학교</span><span class="school-item">대구관남초등학교</span><span class="school-item">대구관문초등학교</span><span class="school-item">대구관음초등학교</span><span class="school-item">대구관천초등학교</span><span class="school-item">대구교동초등학교</span><span class="school-item">대구구암초등학교</span><span class="school-item">대구국우초등학교</span><span class="school-item">대구달산초등학교</span><span class="school-item">대구대산초등학교</span><span class="school-item">대구대천초등학교</span><span class="school-item">대구도남초등학교</span><span class="school-item">대구동변초등학교</span><span class="school-item">대구동평초등학교</span><span class="school-item">대구매천초등학교</span><span class="school-item">대구문성초등학교</span><span class="school-item">대구복현초등학교</span><span class="school-item">대구북부초등학교</span><span class="school-item">대구사수초등학교</span><span class="school-item">대구산격초등학교</span><span class="school-item">대구삼영초등학교</span><span class="school-item">대구서변초등학교</span><span class="school-item">대구성북초등학교</span><span class="school-item">대구신암초등학교</span><span class="school-item">대구연경초등학교</span><span class="school-item">대구옥산초등학교</span><span class="school-item">대구운암초등학교</span><span class="school-item">대구칠곡초등학교</span><span class="school-item">대구칠성초등학교</span><span class="school-item">대구침산초등학교</span><span class="school-item">대구태암초등학교</span><span class="school-item">대구태전초등학교</span><span class="school-item">대구태현초등학교</span><span class="school-item">대구팔달초등학교</span><span class="school-item">대구학남초등학교</span><span class="school-item">대구학정초등학교</span><span class="school-item">대구함지초등학교</span><span class="school-item">북대구초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (22)</div><div class="school-list"><span class="school-item">강북중학교</span><span class="school-item">경명여자중학교</span><span class="school-item">관음중학교</span><span class="school-item">관천중학교</span><span class="school-item">구암중학교</span><span class="school-item">대구북중학교</span><span class="school-item">대구일중학교</span><span class="school-item">대구체육중학교</span><span class="school-item">동변중학교</span><span class="school-item">동평중학교</span><span class="school-item">매천중학교</span><span class="school-item">복현중학교</span><span class="school-item">사수중학교</span><span class="school-item">산격중학교</span><span class="school-item">서변중학교</span><span class="school-item">성광중학교</span><span class="school-item">성화중학교</span><span class="school-item">운암중학교</span><span class="school-item">칠곡중학교</span><span class="school-item">침산중학교</span><span class="school-item">팔달중학교</span><span class="school-item">학남중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (17)</div><div class="school-list"><span class="school-item">강북고등학교</span><span class="school-item">경명여자고등학교</span><span class="school-item">경상고등학교</span><span class="school-item">경상여자고등학교</span><span class="school-item">구암고등학교</span><span class="school-item">대구국제고등학교</span><span class="school-item">대구스마트고등학교</span><span class="school-item">대구체육고등학교</span><span class="school-item">매천고등학교</span><span class="school-item">성광고등학교</span><span class="school-item">성화여자고등학교</span><span class="school-item">영송여자고등학교</span><span class="school-item">영진고등학교</span><span class="school-item">운암고등학교</span><span class="school-item">칠성고등학교</span><span class="school-item">학남고등학교</span><span class="school-item">함지고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (2)</div><div class="school-list"><span class="school-item">대구성보학교</span><span class="school-item">대구이룸고등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-서구" class="center-card" data-name="서구" data-search="서구 대구 서구 중리동 내당동 원대동 상리동 비산동 평리동 이현동 경덕여자고등학교 경운중학교 경일중학교 계성고등학교 달성고등학교 대구경운초등학교 대구과학기술고등학교 대구내서초등학교 대구달서초등학교 대구달성초등학교 대구대성초등학교 대구두류초등학교 대구북비산초등학교 대구비산초등학교 대구서도초등학교 대구서부고등학교 대구서부초등학교 대구서평초등학교 대구온라인학교 대구이현초등학교 대구인지초등학교 대구제일고등학교 대구중리초등학교 대구청라중학교 대구평리초등학교 대평중학교 서남중학교 서대구중학교 서대구초등학교 중리중학교 평리중학교 대구 서구 과외 대구 서구 수학과외 대구 서구 영어과외 대구 서구 국어과외 대구 서구 과학과외 대구 서구 사회과외 대구 서구 일대일과외 대구 서구 비대면과외 대구 서구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 서구</div>
+        </div>
+        <div class="center-name">대구광역시 서구</div>
+        <div class="center-reg">관할 학교 31개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">중리동</span><span class="dong-tag">내당동</span><span class="dong-tag">원대동</span><span class="dong-tag">상리동</span><span class="dong-tag">비산동</span><span class="dong-tag">평리동</span><span class="dong-tag">이현동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (16)</div><div class="school-list"><span class="school-item">대구경운초등학교</span><span class="school-item">대구내서초등학교</span><span class="school-item">대구달서초등학교</span><span class="school-item">대구달성초등학교</span><span class="school-item">대구대성초등학교</span><span class="school-item">대구두류초등학교</span><span class="school-item">대구북비산초등학교</span><span class="school-item">대구비산초등학교</span><span class="school-item">대구서도초등학교</span><span class="school-item">대구서부초등학교</span><span class="school-item">대구서평초등학교</span><span class="school-item">대구이현초등학교</span><span class="school-item">대구인지초등학교</span><span class="school-item">대구중리초등학교</span><span class="school-item">대구평리초등학교</span><span class="school-item">서대구초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (8)</div><div class="school-list"><span class="school-item">경운중학교</span><span class="school-item">경일중학교</span><span class="school-item">대구청라중학교</span><span class="school-item">대평중학교</span><span class="school-item">서남중학교</span><span class="school-item">서대구중학교</span><span class="school-item">중리중학교</span><span class="school-item">평리중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (6)</div><div class="school-list"><span class="school-item">경덕여자고등학교</span><span class="school-item">계성고등학교</span><span class="school-item">달성고등학교</span><span class="school-item">대구과학기술고등학교</span><span class="school-item">대구서부고등학교</span><span class="school-item">대구제일고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (1)</div><div class="school-list"><span class="school-item">대구온라인학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-수성구" class="center-card" data-name="수성구" data-search="수성구 대구 수성구 황금동 범어동 시지동 노변동 지산동 황금2동 수성동 만촌동 대구동 두산동 매호동 범물동 신매동 중동 성동 상동 파동 욱수동 경북고등학교 경신고등학교 경신중학교 고산중학교 노변중학교 능인고등학교 능인중학교 대구경동초등학교 대구고산초등학교 대구과학고등학교 대구남산고등학교 대구남양학교 대구노변초등학교 대구농업마이스터고등학교 대구대청초등학교 대구동도초등학교 대구동문초등학교 대구동부중학교 대구동산초등학교 대구동성초등학교 대구동원초등학교 대구동일초등학교 대구동중학교 대구동천초등학교 대구두산초등학교 대구들안길초등학교 대구만촌초등학교 대구매동초등학교 대구매호초등학교 대구범물초등학교 대구범어초등학교 대구범일초등학교 대구복명초등학교 대구사월초등학교 대구삼육초등학교 대구성동초등학교 대구수성초등학교 대구시지초등학교 대구신매초등학교 대구여자고등학교 대구용지초등학교 대구욱수초등학교 대구중앙고등학교 대구중앙중학교 대구중앙초등학교 대구지봉초등학교 대구지산초등학교 대구청림초등학교 대구파동초등학교 대구혜화여자고등학교 대구황금초등학교 대륜고등학교 대륜중학교 덕원고등학교 덕원중학교 덕화중학교 동도중학교 동문고등학교 동원중학교 매호중학교 범물중학교 범일중학교 소선여자중학교 수성고등학교 수성중학교 시지고등학교 시지중학교 신명여자중학교 영남공업고등학교 오성고등학교 오성중학교 정화여자고등학교 정화중학교 지산중학교 황금중학교 대구 수성구 과외 대구 수성구 수학과외 대구 수성구 영어과외 대구 수성구 국어과외 대구 수성구 과학과외 대구 수성구 사회과외 대구 수성구 일대일과외 대구 수성구 비대면과외 대구 수성구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 수성구</div>
+        </div>
+        <div class="center-name">대구광역시 수성구</div>
+        <div class="center-reg">관할 학교 75개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">황금동</span><span class="dong-tag">범어동</span><span class="dong-tag">시지동</span><span class="dong-tag">노변동</span><span class="dong-tag">지산동</span><span class="dong-tag">황금2동</span><span class="dong-tag">수성동</span><span class="dong-tag">만촌동</span><span class="dong-tag">대구동</span><span class="dong-tag">두산동</span><span class="dong-tag">매호동</span><span class="dong-tag">범물동</span> <span class="dong-tag dong-more">외 6개 동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (34)</div><div class="school-list"><span class="school-item">대구경동초등학교</span><span class="school-item">대구고산초등학교</span><span class="school-item">대구노변초등학교</span><span class="school-item">대구대청초등학교</span><span class="school-item">대구동도초등학교</span><span class="school-item">대구동문초등학교</span><span class="school-item">대구동산초등학교</span><span class="school-item">대구동성초등학교</span><span class="school-item">대구동원초등학교</span><span class="school-item">대구동일초등학교</span><span class="school-item">대구동천초등학교</span><span class="school-item">대구두산초등학교</span><span class="school-item">대구들안길초등학교</span><span class="school-item">대구만촌초등학교</span><span class="school-item">대구매동초등학교</span><span class="school-item">대구매호초등학교</span><span class="school-item">대구범물초등학교</span><span class="school-item">대구범어초등학교</span><span class="school-item">대구범일초등학교</span><span class="school-item">대구복명초등학교</span><span class="school-item">대구사월초등학교</span><span class="school-item">대구삼육초등학교</span><span class="school-item">대구성동초등학교</span><span class="school-item">대구수성초등학교</span><span class="school-item">대구시지초등학교</span><span class="school-item">대구신매초등학교</span><span class="school-item">대구용지초등학교</span><span class="school-item">대구욱수초등학교</span><span class="school-item">대구중앙초등학교</span><span class="school-item">대구지봉초등학교</span><span class="school-item">대구지산초등학교</span><span class="school-item">대구청림초등학교</span><span class="school-item">대구파동초등학교</span><span class="school-item">대구황금초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (23)</div><div class="school-list"><span class="school-item">경신중학교</span><span class="school-item">고산중학교</span><span class="school-item">노변중학교</span><span class="school-item">능인중학교</span><span class="school-item">대구동부중학교</span><span class="school-item">대구동중학교</span><span class="school-item">대구중앙중학교</span><span class="school-item">대륜중학교</span><span class="school-item">덕원중학교</span><span class="school-item">덕화중학교</span><span class="school-item">동도중학교</span><span class="school-item">동원중학교</span><span class="school-item">매호중학교</span><span class="school-item">범물중학교</span><span class="school-item">범일중학교</span><span class="school-item">소선여자중학교</span><span class="school-item">수성중학교</span><span class="school-item">시지중학교</span><span class="school-item">신명여자중학교</span><span class="school-item">오성중학교</span><span class="school-item">정화중학교</span><span class="school-item">지산중학교</span><span class="school-item">황금중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (17)</div><div class="school-list"><span class="school-item">경북고등학교</span><span class="school-item">경신고등학교</span><span class="school-item">능인고등학교</span><span class="school-item">대구과학고등학교</span><span class="school-item">대구남산고등학교</span><span class="school-item">대구농업마이스터고등학교</span><span class="school-item">대구여자고등학교</span><span class="school-item">대구중앙고등학교</span><span class="school-item">대구혜화여자고등학교</span><span class="school-item">대륜고등학교</span><span class="school-item">덕원고등학교</span><span class="school-item">동문고등학교</span><span class="school-item">수성고등학교</span><span class="school-item">시지고등학교</span><span class="school-item">영남공업고등학교</span><span class="school-item">오성고등학교</span><span class="school-item">정화여자고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (1)</div><div class="school-list"><span class="school-item">대구남양학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+
+    <div id="card-중구" class="center-card" data-name="중구" data-search="중구 대구 중구 남산동 대봉동 봉산동 대신동 삼덕동 동인동 수창동 동산동 경구중학교 경북공업고등학교 경북대학교사범대학부설고등학교 경북대학교사범대학부설중학교 경북대학교사범대학부설초등학교 경북여자고등학교 계성중학교 계성초등학교 대구남산초등학교 대구동덕초등학교 대구동인초등학교 대구명덕초등학교 대구삼덕초등학교 대구수창초등학교 대구제일중학교 대구종로초등학교 대구초등학교 성명여자중학교 신명고등학교 한국대구화교초등학교 대구 중구 과외 대구 중구 수학과외 대구 중구 영어과외 대구 중구 국어과외 대구 중구 과학과외 대구 중구 사회과외 대구 중구 일대일과외 대구 중구 비대면과외 대구 중구 방문과외">
+      <div class="card-front">
+        <div class="card-top-row">
+          <div class="center-brand brand-wawa">대구 중구</div>
+        </div>
+        <div class="center-name">대구광역시 중구</div>
+        <div class="center-reg">관할 학교 20개 기준 서비스 가능 지역</div>
+        <div class="center-addr filled"><span class="dong-tag">남산동</span><span class="dong-tag">대봉동</span><span class="dong-tag">봉산동</span><span class="dong-tag">대신동</span><span class="dong-tag">삼덕동</span><span class="dong-tag">동인동</span><span class="dong-tag">수창동</span><span class="dong-tag">동산동</span></div>
+        <details class="school-details">
+          <summary>이 지역 학교 목록 보기</summary>
+          <div class="school-type-group"><div class="school-type-label">초등학교 (10)</div><div class="school-list"><span class="school-item">경북대학교사범대학부설초등학교</span><span class="school-item">계성초등학교</span><span class="school-item">대구남산초등학교</span><span class="school-item">대구동덕초등학교</span><span class="school-item">대구동인초등학교</span><span class="school-item">대구명덕초등학교</span><span class="school-item">대구삼덕초등학교</span><span class="school-item">대구수창초등학교</span><span class="school-item">대구종로초등학교</span><span class="school-item">대구초등학교</span></div></div><div class="school-type-group"><div class="school-type-label">중학교 (5)</div><div class="school-list"><span class="school-item">경구중학교</span><span class="school-item">경북대학교사범대학부설중학교</span><span class="school-item">계성중학교</span><span class="school-item">대구제일중학교</span><span class="school-item">성명여자중학교</span></div></div><div class="school-type-group"><div class="school-type-label">고등학교 (4)</div><div class="school-list"><span class="school-item">경북공업고등학교</span><span class="school-item">경북대학교사범대학부설고등학교</span><span class="school-item">경북여자고등학교</span><span class="school-item">신명고등학교</span></div></div><div class="school-type-group"><div class="school-type-label">기타 (1)</div><div class="school-list"><span class="school-item">한국대구화교초등학교</span></div></div>
+        </details>
+        <a href="index.html#consult" class="detail-btn"><i class="ti ti-message-circle-2"></i> 이 지역 과외 상담 신청</a>
+      </div>
+    </div>
+  </div>
+  <div class="no-result" id="noResult">검색 결과가 없습니다. 다른 지역명이나 학교명으로 검색해보세요.</div>
+</div>
+
+<section class="cta-section">
+  <h2>우리 동네 과외 선생님이 궁금하다면</h2>
+  <p>학생 학년·희망 과목·거주 지역을 남겨주시면 담당 매니저가 바로 안내해드립니다.</p>
+  <a href="index.html#consult" class="btn-primary">무료 매칭 상담 신청</a>
+</section>
+
+<footer class="footer">
+  <strong>동화세상에듀코원격평생교육학원</strong>
+  (주)동화세상에듀코 | 사업자등록번호 : 201-81-27348 (통신판매업 신고번호 동대문 제0409호) | 대표자 : 김영철 | 대표전화 : 1899-2277<br>
+  (02580) 서울특별시 동대문구 왕산로 25 (신설동 89-79) 동화세상에듀코 빌딩<br><br>
+  © 2026 (주)동화세상에듀코. All rights reserved.
+</footer>
+
+<a href="https://open.kakao.com/o/sJ7JrYwi" target="_blank" rel="noopener" class="floating-btn">
+  <i class="ti ti-message-circle"></i> 카카오톡 상담
+</a>
+
+<button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로">
+  <i class="ti ti-arrow-up"></i>
+</button>
+<script>
+  (function() {
+    var btn = document.getElementById('topBtn');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) { btn.classList.add('show'); }
+      else { btn.classList.remove('show'); }
+    });
+  })();
+</script>
+
+<script>
+function filterCenters(q) {
+  q = q.trim();
+  var cards = document.querySelectorAll('.center-card');
+  var visibleCount = 0;
+  cards.forEach(function(card) {
+    var haystack = card.dataset.name + ' ' + (card.dataset.search || '');
+    var match = !q || haystack.indexOf(q) !== -1;
+    card.style.display = match ? '' : 'none';
+    if (match) visibleCount++;
+  });
+  document.getElementById('noResult').style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+(function() {
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) {
+    var input = document.getElementById('centerSearch');
+    input.value = q;
+    filterCenters(q);
+  }
+})();
+</script>
+</body>
+</html>
