@@ -70,6 +70,22 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .brand-wawa { background: #E8EFFE; color: #0D2B6B; }
 .brand-modu { background: #E0F5EE; color: #0A5E42; }
 
+.tuition-section { padding: 36px 40px 10px; }
+.tuition-section-head { max-width: 760px; }
+.tuition-section-head h2 { font-size: 19px; font-weight: 800; color: #1a1a1a; margin-bottom: 8px; }
+.tuition-section-notice { font-size: 12px; color: #999; line-height: 1.7; margin-bottom: 20px; }
+.tuition-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.tuition-card { background: #fff; border: 1px solid #E0E6F0; border-radius: 14px; padding: 18px 16px; }
+.tuition-card-title { font-size: 15px; font-weight: 800; padding-bottom: 8px; border-bottom: 2px solid; margin-bottom: 12px; }
+.tuition-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.tuition-freq { font-size: 12.5px; color: #777; }
+.tuition-price { font-size: 13.5px; font-weight: 700; color: #1a1a1a; }
+.tuition-source { font-size: 11.5px; color: #999; margin-top: 16px; line-height: 1.7; }
+.tuition-source a { color: #0D2B6B; font-weight: 700; text-decoration: none; }
+@media (max-width: 600px) {
+  .tuition-grid { grid-template-columns: 1fr; }
+}
+
 .centers-main { padding: 36px 40px 10px; }
 .center-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 .center-card { min-height: 180px; }
@@ -188,6 +204,34 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <span class="legend-chip brand-wawa">와와학습코칭센터</span>
     <span class="legend-chip brand-modu">모두오름학습코칭학원</span>
   </div>
+</div>
+
+<div class="tuition-section">
+  <div class="tuition-section-head">
+    <h2>학원 수강료 안내</h2>
+    <div class="tuition-section-notice">※ 같은 계열 학원(와와학습코칭센터)의 서울 이외 지역 기준 수강료입니다 · 정확한 금액은 방문 상담을 통해 결정됩니다 · 수업 시간은 90~100분 기준입니다 · 학습 플래닝이나 AI 학습 등 커리큘럼에 맞춘 추가 학습 비용이 별도로 발생할 수 있습니다.</div>
+  </div>
+  <div class="tuition-grid">
+    <div class="tuition-card">
+      <div class="tuition-card-title" style="color:#0D2B6B;border-color:#0D2B6B;">초등반</div>
+      <div class="tuition-row"><div class="tuition-freq">주 5회 수업</div><div class="tuition-price">300,000원</div></div>
+      <div class="tuition-row"><div class="tuition-freq">주 3회 수업</div><div class="tuition-price">180,000원</div></div>
+      <div class="tuition-row" style="margin-bottom:0;"><div class="tuition-freq">주 2회 수업</div><div class="tuition-price">120,000원</div></div>
+    </div>
+    <div class="tuition-card">
+      <div class="tuition-card-title" style="color:#E05A2B;border-color:#E05A2B;">중등반</div>
+      <div class="tuition-row"><div class="tuition-freq">주 5회 수업</div><div class="tuition-price">325,000원</div></div>
+      <div class="tuition-row"><div class="tuition-freq">주 3회 수업</div><div class="tuition-price">195,000원</div></div>
+      <div class="tuition-row" style="margin-bottom:0;"><div class="tuition-freq">주 2회 수업</div><div class="tuition-price">130,000원</div></div>
+    </div>
+    <div class="tuition-card">
+      <div class="tuition-card-title" style="color:#1A6B3C;border-color:#1A6B3C;">고등반</div>
+      <div class="tuition-row"><div class="tuition-freq">주 5회 수업</div><div class="tuition-price">375,000원</div></div>
+      <div class="tuition-row"><div class="tuition-freq">주 3회 수업</div><div class="tuition-price">225,000원</div></div>
+      <div class="tuition-row" style="margin-bottom:0;"><div class="tuition-freq">주 2회 수업</div><div class="tuition-price">150,000원</div></div>
+    </div>
+  </div>
+  <div class="tuition-source">표시된 금액은 1과목 기준이며, 지점별로 다소 달라질 수 있습니다. 전체 수강료 안내는 <a href="https://academy-website.co.kr/pricing.html" target="_blank" rel="noopener">와와학습코칭센터 수강료 페이지</a>에서 확인하세요.</div>
 </div>
 
 <div class="centers-main">
