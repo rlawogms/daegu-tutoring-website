@@ -106,6 +106,7 @@
           subject: '[전과목 일대일 과외] 📋 상담 신청이 접수됐습니다',
           '학생 이름': f.querySelector('[name="학생이름"]').value,
           '학부모 연락처': f.querySelector('[name="연락처"]').value,
+          '학교명': f.querySelector('[name="학교명"]').value,
           '학년': f.querySelector('[name="학년"]').value,
           '희망 과목': f.querySelector('[name="희망과목"]').value,
           '수업 방식': f.querySelector('[name="수업방식"]').value,
@@ -718,6 +719,7 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <form id="consultForm">
       <input type="text" name="학생이름" placeholder="학생 이름" required />
       <input type="tel" name="연락처" placeholder="학부모 연락처 (010-0000-0000)" required />
+      <input type="text" name="학교명" placeholder="학교명 (예: OO초등학교)" required />
       <select name="학년" required>
         <option value="" disabled selected>학년 선택</option>
         <option>초등 1~3학년</option>
@@ -882,6 +884,7 @@ document.addEventListener('click', function(e) {
           <input type="text" id="wmName" placeholder="예: 김민준" required />
           <input type="tel" id="wmPhone" placeholder="010-0000-0000" required />
         </div>
+        <input type="text" id="wmSchool" placeholder="학교명 (예: OO초등학교)" required />
         <select id="wmRegion" required>
           <option value="" disabled selected>지역 선택</option>
           <option>대구광역시 군위군</option>
@@ -951,6 +954,7 @@ document.addEventListener('click', function(e) {
           subject: '[대구 전과목 일대일 과외] 📋 방문 팝업 상담 신청이 접수됐습니다',
           '학생 이름': document.getElementById('wmName').value,
           '학부모 연락처': document.getElementById('wmPhone').value,
+          '학교명': document.getElementById('wmSchool').value,
           '학년': selectedGrade,
           '희망 과목': wmSubject,
           '수업 방식': document.getElementById('wmMode').value,
