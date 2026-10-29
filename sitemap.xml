@@ -126,4 +126,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://daegu-tutoring.co.kr/%EA%B2%80%EC%A0%95%EA%B3%A0%EC%8B%9C-%EA%B3%BC%EC%99%B8.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daegu-tutoring.co.kr/%EA%B5%AD%EC%A0%9C%ED%95%99%EA%B5%90-%EA%B3%BC%EC%99%B8.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
