@@ -64,7 +64,10 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 
 .feed-section { padding: 36px 40px 60px; background: #F6F2EA; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.review-card { background: #fff; border-radius: 12px; padding: 22px 20px; }
+.review-card { background: #fff; border-radius: 12px; padding: 22px 20px; border: 2px solid transparent; }
+.review-card.featured { border-color: #FFB400; }
+.review-badge { display: none; font-size: 11px; font-weight: 700; color: #0D2B6B; background: #FFF3D6; padding: 3px 9px; border-radius: 10px; margin-bottom: 8px; }
+.review-card.featured .review-badge { display: inline-block; }
 .review-stars { color: #FFB400; font-size: 15px; margin-bottom: 8px; }
 .review-text { font-size: 14px; color: #333; line-height: 1.8; margin-bottom: 12px; }
 .review-author { font-size: 12px; color: #888; }
@@ -136,27 +139,32 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 
 <section class="feed-section">
   <div class="review-grid">
-    <div class="review-card">
+    <div class="review-card" data-review-id="1">
+      <div class="review-badge">오늘의 후기</div>
       <div class="review-stars">★★★★★</div>
       <div class="review-text">수성구에 괜찮은 수학 선생님 구하기가 쉽지 않았는데, 화상 수업으로 아이 수준에 맞춰 진도를 조절해주셔서 만족도가 높습니다. 두 달 사이 풀이 속도가 눈에 띄게 빨라졌어요.</div>
       <div class="review-author">중2 학부모 · 비대면 수학 수강 2개월</div>
     </div>
-    <div class="review-card">
+    <div class="review-card" data-review-id="2">
+      <div class="review-badge">오늘의 후기</div>
       <div class="review-stars">★★★★★</div>
       <div class="review-text">방문 선생님이 정말 꼼꼼하게 봐주세요. 학원과 달리 아이만을 위한 진도라 부족한 부분을 바로바로 채울 수 있었고, 3개월 만에 내신 영어 점수가 확실히 올랐어요.</div>
       <div class="review-author">고1 학부모 · 대면 영어 수강 3개월</div>
     </div>
-    <div class="review-card">
+    <div class="review-card featured" data-review-id="3">
+      <div class="review-badge">오늘의 후기</div>
       <div class="review-stars">★★★★☆</div>
       <div class="review-text">달서구에서 국어 과외 선생님을 찾기 어려웠는데, 비대면으로 좋은 선생님을 만나 아이가 처음으로 지문 읽는 걸 덜 부담스러워해요. 아직 한 달밖에 안 됐지만 변화가 느껴집니다.</div>
       <div class="review-author">중1 학부모 · 비대면 국어 수강 1개월</div>
     </div>
-    <div class="review-card">
+    <div class="review-card" data-review-id="4">
+      <div class="review-badge">오늘의 후기</div>
       <div class="review-stars">★★★★★</div>
       <div class="review-text">초등학생이라 낯선 선생님과 잘 적응할 수 있을지 걱정했는데, 방문 첫날부터 아이 눈높이에 맞춰 재미있게 이끌어주셔서 수업 시간을 손꼽아 기다려요. 넉 달째 꾸준히 수강 중입니다.</div>
       <div class="review-author">초6 학부모 · 대면 영어 수강 4개월</div>
     </div>
-    <div class="review-card">
+    <div class="review-card" data-review-id="5">
+      <div class="review-badge">오늘의 후기</div>
       <div class="review-stars">★★★★★</div>
       <div class="review-text">중간고사 성적이 계속 떨어져서 걱정이 많았는데, 선생님이 취약한 단원부터 차근차근 짚어주셔서 두 달 만에 눈에 띄게 점수가 올랐어요. 매주 학습 리포트도 꼼꼼히 보내주셔서 믿음이 갑니다.</div>
       <div class="review-author">중2 학부모 · 대면 수학 수강 2개월</div>
